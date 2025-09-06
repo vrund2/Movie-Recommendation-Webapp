@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello, World</title>
+</head>
+<body>
+<p>Hello <span id="username"></span></p>
+<p> <span id="other_data"></span> </p>
+<div id="slideContainer"></div>
+<p> {{x}}</p>
+<script>
+
+    var user = JSON.parse('{{ barColors | tojson | safe}}');
+
+    document.getElementById('username').innerHTML=user.firstname + " " +
+            user.lastname;
+            
+    document.getElementById('other_data').innerHTML=user.Age;
+
+    var str = '<ul>'
+
+      user.forEach(function(slide) {
+        str += '<li>'+ slide + '</li>';
+      }); 
+      
+      str += '</ul>';
+      document.getElementById("slideContainer").innerHTML = str;
+
+</script>
+</body>
+</html>
