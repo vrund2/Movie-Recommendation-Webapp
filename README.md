@@ -1,4 +1,4 @@
-# Netflux Movie Recommendation System 🎥
+# Movie Recommendation System 🎥
 
 Netflux is a web-based movie recommendation system designed to provide personalized movie suggestions based on user preferences. The system is built using HTML, CSS, and Javascript, offering an interactive and user-friendly interface for seamless movie browsing and recommendation.
 
